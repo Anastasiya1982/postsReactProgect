@@ -1,38 +1,159 @@
 .App {
   text-align: center;
+  height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
+  width: 100%;
+  padding: 20px;
   display: flex;
-  flex-direction: column;
+  height: 50px;
+  background-color: antiquewhite;
+  justify-content: space-between;
+}
+
+.header-wrapper { 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+}
+
+.header-logo{
+  width: 100px;
+  height: 50px;
+}
+.header-logo img {
+  width: 100%;
+  height: 100%;
+  
+}
+.exit-icon{
+  width: 35px;
+  height: 35px;
+  /* transform: scale(0.5); */
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: end;
+  cursor: pointer;
+  
 }
 
-.App-link {
-  color: #61dafb;
+.main {
+  padding: 0 100px;
+  max-height: 800px;
+  position: relative;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.post {
+  display: flex;
+  max-width: 800px;
+  padding: 15px;
+  border: 1px solid teal;
+  margin-top: 15px;
+  justify-content: space-between;
+  align-items: center;
 }
+
+.noPostsFound {
+  margin-top: 20px;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  margin-right: 25px;
+}
+
+.active-link {
+  color: red
+}
+
+.login-form {
+  max-width: 500px;
+  width: 100%;
+  margin: 50px auto;
+}
+
+#light {
+  background-color: rgb(158, 196, 230);
+
+}
+
+/* #light button {
+  background-color: blueviolet;
+} */
+
+#dark {
+  background-color: gray;
+}
+.posts-btn{
+  display: flex;
+  flex-direction: column;
+}
+
+/* input[type='checkbox']{
+    width: 50px;
+    height: 50px;
+}
+input[type='checkbox']:checked{
+  color: brown;
+} */
+
+
+.progressBar{
+  width: 100%;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top:0;
+  left:0;
+  z-index: 5;
+
+}
+
+
+
+.MuiPagination-root{
+  margin-top: 50px;
+}
+.MuiPagination-root .MuiPaginationItem-root{
+  margin: 0px 5px;
+}
+
+
+.post-enter {
+  opacity: 0;
+}
+.post-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+.post-exit {
+  opacity: 1;
+}
+.post-exit-active {
+  opacity: 0;
+  transition: opacity 500ms ease-in;
+}
+
+/* .post-enter {
+  transform: translateX(-450px);
+ 
+}
+.post-enter-active {
+ transform: translateX(0px);
+ transition: all 500ms ease-in;
+
+}
+.post-exit {
+  opacity: 1;
+}
+.post-exit-active {
+  transform: translateX(-450px);
+  transition: all 500ms ease-in;
+ 
+} */

@@ -1,0 +1,10 @@
+
+.myBtn{
+    padding: 5px 15px;
+    background-color: navy;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: aliceblue;
+    margin: 10px 0 0 10px;
+}
